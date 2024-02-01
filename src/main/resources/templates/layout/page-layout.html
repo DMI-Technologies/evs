@@ -1,0 +1,6 @@
+<html xmlns:th="http://www.thymeleaf.org" lang="en" th:fragment="page(title)">
+    <th:block th:replace="~{fragments/page/page-head::header(title=${title})}" />
+    <body>
+        <th:block th:replace="~{::page-layout-content}" />
+    </body>
+</html>
