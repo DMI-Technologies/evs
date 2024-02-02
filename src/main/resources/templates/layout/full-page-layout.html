@@ -1,9 +1,8 @@
 <th:block th:fragment="full-page(title)">
     <th:block th:replace="~{layout/page-layout::page(${title})}">
         <th:block th:fragment="page-layout-content">
-            <th:block th:replace="~{fragments/page/header}" />
-            <th:block th:replace="~{::full-page-layout-content}" />
-            <th:block th:replace="~{fragments/page/footer}" />
+                <th:block th:replace="~{fragments/page/header}" />
+                <th:blocl th:replace="~{layout/page-main-content}" />
         </th:block>
     </th:block>
 </th:block>

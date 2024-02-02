@@ -1,0 +1,9 @@
+<div th:fragment="page-main-content" class="page-content">
+    <div class="page-content__navigation-wrapper">
+        This is the navigation
+    </div>
+    <div class="page-content__content-wrapper">
+        <th:block th:replace="~{::full-page-layout-content}" />
+        <th:block th:replace="~{fragments/page/footer}" />
+    </div>
+</div>

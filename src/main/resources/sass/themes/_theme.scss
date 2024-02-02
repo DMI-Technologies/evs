@@ -1,0 +1,14 @@
+@import "../abstracts/colors";
+
+.theme {
+  &__dark {
+    background-color: $background-color-dark__lighter;
+    border-color: $background-color-dark__lighter;
+    color: $text-color-dark;
+  }
+  &__light {
+    background-color: $background-color-light__lighter;
+    border-color: $background-color-light__lighter;
+    color: $text-color-dark;
+  }
+}

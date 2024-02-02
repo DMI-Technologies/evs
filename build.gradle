@@ -23,7 +23,8 @@ dependencies {
 
 
 def task_bootRun = "bootRun"
-def task_compileSaas = 'compileSaas'
+def task_compileSaas = 'compileSass'
+def task_compileSaas_watch = 'compileSassWatch'
 def task_start = 'start'
 
 def path_saasDirPath = '.'
@@ -35,6 +36,12 @@ tasks.register(task_compileSaas, Exec) {
 	doLast {
 		println "Sass compiled"
 	}
+}
+
+tasks.register(task_compileSaas_watch, Exec) {
+	workingDir path_saasDirPath
+	standardOutput = new ByteArrayOutputStream()
+	commandLine 'sh', './scripts/sassWatch.sh'
 }
 
 tasks.register(task_start) {

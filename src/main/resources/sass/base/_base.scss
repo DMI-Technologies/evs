@@ -1,0 +1,13 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif, "Abyssinica SIL";
+  min-height: 100vh;
+  background-color: $background-color-dark;
+  color: $text-color-dark;
+}
